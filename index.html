@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/2cols.css" />
     <link rel="stylesheet" href="vendors/css/3cols.css" />
     <link rel="stylesheet" href="vendors/css/4cols.css" />
     <link rel="stylesheet" href="vendors/css/col.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
+
     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <title>Omnifood</title>
   </head>
   <body>
@@ -27,8 +31,10 @@
       </nav>
       <div class="inner-text-box">
         <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
-        <a class="btn btn-full" href="#">I’m hungry </a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <div>
+          <a class="btn btn-full" href="#">I’m hungry </a>
+          <a class="btn btn-ghost" href="#">Show me more</a>
+        </div>
       </div>
     </header>
 
@@ -153,8 +159,14 @@
             </p>
           </div>
 
-          <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"/></a>
-          <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"/></a>
+          <div class="store-app">
+            <a href="#" class="btn-app">
+              <img src="resources/img/download-app.svg" alt="App Store Button" />
+            </a>
+            <a href="#" class="btn-app">
+              <img src="resources/img/download-app-android.png" alt="Play Store Button" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -274,8 +286,8 @@
         <h2>Start eating healthy today</h2>
       </div>
       <div class="group">
-        <div class="col span_1_of_3">
-          <div class="plan-box">
+        <div class="col span_1_of_3 ">
+          <div class="plan-box ">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
@@ -429,5 +441,8 @@
         </p>
       </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
   </body>
 </html>
